@@ -1,0 +1,171 @@
+<header class="navbar navbar-expand-lg ml-auto navbar-light border-bottom">
+    <div class="d-flex">
+        <ul class="navbar-nav mr-2 mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a>Giao dịch hàng ngày</a>
+            </li>
+            <li class="nav-item">
+                <a>Lịch hẹn</a>
+            </li>
+            <li class="nav-item">
+                <a>Hóa đơn</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="transfer">
+    <div class="d-flex navbar-expand-lg header">
+        <div class="input-group align-items-center search-input">
+            <img src='assets/img/iconSearch24.svg' alt="" />
+            <input type="search" class="form-control" placeholder="Tìm kiếm theo tên hoặc mã vạch ..."
+                aria-label="Search" aria-describedby="search-addon" [ngStyle]='{"border":"none"}' />
+        </div>
+        <div class="btn-group d-flex align-items-center">
+            <button type="button" class="btn btn-dropdown">
+                <span>
+                    Chọn ngày
+                </span>
+                <img src='assets/img/iconDropdown16.svg' alt="" [ngStyle]='{"marginRight":"12px"}' />
+            </button>
+            <button type="button" class="btn btn-export">
+                <img src='assets/img/iconExport24.svg' alt="" [ngStyle]='{"marginRight":"12px"}' />
+                <span>
+                    Tải xuống
+                </span>
+            </button>
+            <button type="button" class="btn btn-filter">
+                <img src='assets/img/iconFilter24.svg' alt="" [ngStyle]='{"marginRight":"12px"}' />
+                <span>
+                    Bộ lọc
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="transfer-table">
+        <table class="table" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>
+                        Trạng thái
+                    </th>
+                    <th>
+                        Mã đơn hàng
+                    </th>
+                    <th>
+                        Khách hàng
+                    </th>
+                    <th>
+                        Dịch vụ
+                    </th>
+                    <th>
+                        Thời gian hẹn
+                    </th>
+                    <th>
+                        Thời lượng
+                    </th>
+                    <th>Chi nhánh
+                    </th>
+                    <th>
+                        Nhân viên
+                    </th>
+                    <th>
+                        Giá
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr class="tr-transfer">
+                    <td >
+                        <span [ngStyle]='{"color":"#27AE60"}'>• Đang hoạt động</span>
+                    </td>
+                    <td >
+                        <span>DHXD0001</span>
+                        <br>
+                        <p [ngStyle]='{"margin":"0", "font-size":"12px", "font-weight":"400", "color":"#747588"}'>23:01, 02/01/2021</p>
+                    </td>
+                    <td>
+                        <span>Kim Ngân Nguyễn</span>
+                        <p [ngStyle]='{"margin":"0", "font-size":"14px", "font-weight": "600" , "color":"#EF8359"}'>090 987 098</p>
+                    </td>
+                    <td class="td-transfer">
+                        <span>Blow Dry</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span>03/01/2021 , 12:30</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span>1h30m</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span>Salon NCT</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span>Huy Phạm Văn</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span [ngStyle]='{"font-size":"20px", "font-weight":"600"}'>1,500,000 đ</span>
+                    </td>
+                </tr>
+                <tr class="tr-transfer">
+                    <td >
+                        <span [ngStyle]='{"color":"#27AE60"}'>• Đang hoạt động</span>
+                    </td>
+                    <td >
+                        <span>DHXD0001</span>
+                        <br>
+                        <p [ngStyle]='{"margin":"0", "font-size":"12px", "font-weight":"400", "color":"#747588"}'>23:01, 02/01/2021</p>
+                    </td>
+                    <td>
+                        <span>Kim Ngân Nguyễn</span>
+                        <p [ngStyle]='{"margin":"0", "font-size":"14px", "font-weight": "600" , "color":"#EF8359"}'>090 987 098</p>
+                    </td>
+                    <td class="td-transfer">
+                        <span>Blow Dry</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span>03/01/2021 , 12:30</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span>1h30m</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span>Salon NCT</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span>Huy Phạm Văn</span>
+                    </td>
+                    <td class="td-transfer">
+                        <span [ngStyle]='{"font-size":"20px", "font-weight":"600"}'>1,500,000 đ</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <nav aria-label="page navigation" class="page-pagination">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <img src='assets/img/iconPagiLeft.svg' alt="">
+                </a>
+            </li>
+            <li class="page-item" routerLinkActive="pagination-active" #rla='routerLinkActive'>
+                <a class="page-link active" href="#">01</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">02</a></li>
+            <li class="page-item"><a class="page-link" href="#">03</a></li>
+            <li class="page-item"><a class="page-link" href="#">04</a></li>
+            <li class="page-item"><a class="page-link" href="#">05</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item"><a class="page-link" href="#">21</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <img src='assets/img/iconPagiRight.svg' alt="">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

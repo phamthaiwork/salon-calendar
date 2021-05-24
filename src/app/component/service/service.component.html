@@ -1,0 +1,162 @@
+<header class="navbar navbar-expand-lg ml-auto navbar-light border-bottom">
+    <div class="d-flex">
+        <ul class="navbar-nav mr-2 mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a>Danh sách dịch vụ</a>
+            </li>
+            <li class="nav-item">
+                <a>Kế hoạch thanh toán</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="service">
+    <div class="d-flex navbar-expand-lg header">
+        <div class="input-group align-items-center search-input">
+            <button type="button" class="btn btn-list">
+                <img src='assets/img/iconList24.svg' alt="" />
+            </button>
+            <button type="button" class="btn btn-grid">
+                <img src='assets/img/iconGrid24.svg' alt="" />
+            </button>
+        </div>
+        <div class="btn-group d-flex align-items-center">
+            <button type="button" class="btn btn-export">
+                <img src='assets/img/iconExport24.svg' alt="" [ngStyle]='{"marginRight":"12px"}' />
+                <span>
+                    Tải xuống
+                </span>
+            </button>
+            <button type="button" class="btn btn-add">
+                <span>
+                    Thêm mới
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="service-table">
+        <table class="table" cellpadding="5">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        TÊN DỊCH VỤ
+                    </th>
+                    <th scope="col">
+                        THỜI GIAN
+                    </th>
+                    <th scope="col">
+                        ĐƠN GIÁ
+                    </th >
+                </tr>
+
+            </thead>
+            <tbody class="tbody-service">
+                <tr>
+                    <td colspan="3" [ngStyle]='{"background": "#f7f7fb"}'>
+                        <button [ngStyle]='{"background": "none","border":"none", "padding": "0"}'>
+                            <img src='assets/img/iconDrag16.svg' alt="" />
+                        </button>
+                        <img src='assets/img/iconMakeHair24.svg' alt="" />
+                        <span>Combo làm tóc</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button [ngStyle]='{"background": "none","border":"none", "padding": "0"}'>
+                            <img src='assets/img/iconDrag16.svg' alt="" />
+                        </button>
+                        <span>Combo làm tóc uốn nhuộm</span>
+                    </td>
+                    <td>
+                        <span>1h 30m</span>
+                    </td>
+                    <td [ngStyle]='{"font-size":"20px", "font-weight":"600"}'>
+                        <span>1,5000,000</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button [ngStyle]='{"background": "none","border":"none", "padding": "0"}'>
+                            <img src='assets/img/iconDrag16.svg' alt="" />
+                        </button>
+                        <span>Combo gội đầu và tẩy da chết</span>
+                    </td>
+                    <td>
+                        <span>1h 30m</span>
+                    </td>
+                    <td [ngStyle]='{"font-size":"20px", "font-weight":"600"}'>
+                        <span>1,5000,000</span>
+                    </td>
+                </tr>
+            </tbody>
+            <br>
+
+            <tbody>
+                <tr>
+                    <td colspan="3" [ngStyle]='{"background": "#f7f7fb"}'>
+                        <button [ngStyle]='{"background": "none","border":"none", "padding": "0"}'>
+                            <img src='assets/img/iconDrag16.svg' alt="" />
+                        </button>
+                        <img src='assets/img/iconMakeHair24.svg' alt="" />
+                        <span>Combo làm lông</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button [ngStyle]='{"background": "none","border":"none", "padding": "0"}'>
+                            <img src='assets/img/iconDrag16.svg' alt="" />
+                        </button>
+                        <span>Combo làm lông mũi</span>
+                    </td>
+                    <td>
+                        <span>1h 30m</span>
+                    </td>
+                    <td [ngStyle]='{"font-size":"20px", "font-weight":"600"}'>
+                        <span>1,5000,000</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button [ngStyle]='{"background": "none","border":"none", "padding": "0"}'>
+                            <img src='assets/img/iconDrag16.svg' alt="" />
+                        </button>
+                        <span>Combo làm lông cơ thể</span>
+                    </td>
+                    <td>
+                        <span>1h 30m</span>
+                    </td>
+                    <td [ngStyle]='{"font-size":"20px", "font-weight":"600"}'>
+                        <span>1,5000,000</span>
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+    <nav aria-label="page navigation" class="page-pagination">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <img src='assets/img/iconPagiLeft.svg' alt="">
+                </a>
+            </li>
+            <li class="page-item" routerLinkActive="pagination-active" #rla='routerLinkActive'>
+                <a class="page-link active" href="#">01</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">02</a></li>
+            <li class="page-item"><a class="page-link" href="#">03</a></li>
+            <li class="page-item"><a class="page-link" href="#">04</a></li>
+            <li class="page-item"><a class="page-link" href="#">05</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item"><a class="page-link" href="#">21</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <img src='assets/img/iconPagiRight.svg' alt="">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

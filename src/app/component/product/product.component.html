@@ -1,0 +1,118 @@
+<header class="navbar navbar-expand-lg ml-auto navbar-light border-bottom">
+    <div class="d-flex">
+        <ul class="navbar-nav mr-2 mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a>Các sản phẩm</a>
+            </li>
+            <li class="nav-item">
+                <a>Đơn hàng</a>
+            </li>
+            <li class="nav-item">
+                <a>Nhán hiệu</a>
+            </li>
+            <li class="nav-item">
+                <a>Thể loại</a>
+            </li>
+            <li class="nav-item">
+                <a>Các nhà cung cấp</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<div class="product">
+    <div class="d-flex navbar-expand-lg header">
+        <div class="input-group align-items-center search-input">
+            <img src='assets/img/iconSearch24.svg' alt="" />
+            <input type="search" class="form-control" placeholder="Tìm kiếm theo tên hoặc mã vạch ..."
+                aria-label="Search" aria-describedby="search-addon" [ngStyle]='{"border":"none"}' />
+        </div>
+        <div class="btn-group d-flex align-items-center">
+            <button type="button" class="btn btn-export">
+                <img src='assets/img/iconExport24.svg' alt="" [ngStyle]='{"marginRight":"12px"}' />
+                <span>
+                    Tải xuống
+                </span>
+            </button>
+            <button type="button" class="btn btn-filter">
+                <img src='assets/img/iconFilter24.svg' alt="" [ngStyle]='{"marginRight":"12px"}' />
+                <span>
+                    Bộ lọc
+                </span>
+            </button>
+            <button type="button" class="btn btn-add">
+                <span>
+                    Thêm mới
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="product-table">
+        <table class="table" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>
+                        TÊN SẢN PHẨM
+                    </th>
+                    <th>
+                        MÃ VẠCH
+                    </th>
+                    <th>
+                        TÌNH TRẠNG
+                    </th>
+                    <th>
+                        NGÀY CẬP NHẬP
+                    </th>
+                    <th>
+                        GIÁ BÁN LẺ
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span>Bộ chăm sóc tóc nhập khẩu Ehair</span>
+                    </td>
+                    <td>
+                        <span>0880274927190</span>
+                    </td>
+                    <td>
+                        <span>Còn hàng</span>
+                    </td>
+                    <td>
+                        <span>18:00, 20/07/2020</span>
+                    </td>
+                    <td [ngStyle]='{"font-size":"20px", "font-weight":"600"}'>
+                        <span>1,500,000 đ</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <nav aria-label="page navigation" class="page-pagination">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <img src='assets/img/iconPagiLeft.svg' alt="">
+                </a>
+            </li>
+            <li class="page-item" routerLinkActive="pagination-active" #rla='routerLinkActive'>
+                <a class="page-link active" href="#">01</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">02</a></li>
+            <li class="page-item"><a class="page-link" href="#">03</a></li>
+            <li class="page-item"><a class="page-link" href="#">04</a></li>
+            <li class="page-item"><a class="page-link" href="#">05</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item"><a class="page-link" href="#">21</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <img src='assets/img/iconPagiRight.svg' alt="">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

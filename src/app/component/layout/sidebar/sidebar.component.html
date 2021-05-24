@@ -1,0 +1,26 @@
+<div class="list-group list-group-flush">
+    <a routerLink="/booking">
+        <img src='assets/img/logoHair.svg'  class='list-group-item list-group-item-action' [ngStyle]='{"padding": "0","margin":"16px 16px 26px 16px"}'/>
+    </a>
+    <a routerLink="/booking"  routerLinkActive="active"  #rlab="routerLinkActive">
+        <img src="{{rlab.isActive ? 'assets/img/iconBookActive24.svg' : 'assets/img/iconBook24.svg'}}" alt="" class="list-group-item list-group-item-action"/>
+    </a>
+    <a routerLink="/customer" routerLinkActive="active"  #rlac="routerLinkActive">
+        <img src="{{rlac.isActive ? 'assets/img/iconCustomerActive24.svg' : 'assets/img/iconCustomer24.svg'}}" alt="" class="list-group-item list-group-item-action"/>
+    </a>
+    <a routerLink="/staff" routerLinkActive="active"  #rlast="routerLinkActive">
+        <img src="{{rlast.isActive ? 'assets/img/iconStaffActive24.svg' : 'assets/img/iconStaff24.svg'}}" alt="" class="list-group-item list-group-item-action"/>
+    </a>
+    <a routerLink="/service" routerLinkActive="active"  #rlasv="routerLinkActive">
+        <img src="{{rlasv.isActive ? 'assets/img/iconServiceActive24.svg' : 'assets/img/iconService24.svg'}}" alt="" class="list-group-item list-group-item-action"/>
+    </a>
+    <a routerLink="/product" routerLinkActive="active"  #rlap="routerLinkActive">
+        <img src="{{rlap.isActive ? 'assets/img/iconProductActive24.svg' : 'assets/img/iconProduct24.svg'}}" alt="" class="list-group-item list-group-item-action"/>
+    </a>
+    <a routerLink="/voucher" routerLinkActive="active"  #rlav="routerLinkActive">
+        <img src="{{rlav.isActive ? 'assets/img/iconVoucherActive24.svg' : 'assets/img/iconVoucher24.svg'}}" alt="" class="list-group-item list-group-item-action"/>
+    </a>
+    <a routerLink="/transfer" routerLinkActive="active"  #rlat="routerLinkActive">
+        <img src="{{rlat.isActive ? 'assets/img/iconTransferActive24.svg' : 'assets/img/iconTransfer24.svg'}}" alt="" class="list-group-item list-group-item-action"/>
+    </a>
+</div>
